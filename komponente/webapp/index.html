@@ -24,7 +24,14 @@
     <script id="locate-reuse-libs" src="./utils/locate-reuse-libs.js"
         data-sap-ui-manifest-uri="./manifest.json"
         data-sap-ui-componentName="komponente">
-    </script> 
+    </script>
+    <script>
+		sap.ui.getCore().attachInit(function () {
+			sap.ui.xmlview({
+				viewName: "opensap.myapp.view.App"
+			}).placeAt("content");
+		});
+	</script>
 </head>
 <body class="sapUiBody sapUiSizeCompact" id="content">
     <div

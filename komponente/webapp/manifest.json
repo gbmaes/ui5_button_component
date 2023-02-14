@@ -14,6 +14,17 @@
       "id": "@sap/generator-fiori:basic",
       "version": "1.8.6",
       "toolsId": "4c5a31d6-71c9-4e13-9166-c91c83b6f558"
+    },
+    "dataSources": {
+      "mainService": {
+        "uri": "/sap/opu/odata/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "localUri": "localService/metadata.xml",
+          "odataVersion": "2.0"
+        }
+      }
     }
   },
   "sap.ui": {

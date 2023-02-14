@@ -6,9 +6,11 @@ sap.ui.define(
       "use strict";
   
       return BaseController.extend("komponente.controller.App", {
-        onInit() {
+        onShowHello : function () {
+          // show a native JavaScript alert
+          alert("Hello World");
         }
       });
+    
     }
   );
-  
